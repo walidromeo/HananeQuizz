@@ -39,13 +39,20 @@ let Questions=[{
         choice2:"Kathder M3a Majda Bent 3emmi",
         choice3:"Katchuf Instagram",
         choice4:"Kathder M3a Tata Fatiha ",
-        answer:1}               
+        answer:1}  ,
+               {
+            question:"Ahssen Ougnia 3ziza 3liha ?",
+            choice1:"Azmita",
+            choice2:"Chamch L3achiya",
+            choice3:"hawa hawa ",
+            choice4:"Lm3allem ",
+            answer:1} 
 ]
 let CurrentQ={};
 let AvaibleQ=[];
 let Score = 0;
 let CounterQ=0;
-const MaxQ=3;
+const MaxQ=6;
 const ScoreQ=10;
 let AcceptQ=true
 /*
@@ -74,6 +81,10 @@ function StartGame()
 */
 function NextQ()
 {
+     if (AvaibleQ.length === 0 || CounterQ >= MaxQ )
+    {
+       return window.location.assign("https://www.instagram.com/bennani.hanane/")
+    }
     // Incrematation Counter Question
         CounterQ=CounterQ+1;
     // Using Math.floor() For getting Natural Number And Math.Random() For Getting Random Number
@@ -91,7 +102,7 @@ function NextQ()
     // CurrentQ["Choice+Number"] Because Of In Objects Question I Have Choice1 .... So Concate Choice With Number To Get Choice1...
             Elements.innerHTML = CurrentQ["choice"+ Number]
         // Remove A CurentQ 
-            AvaibleQ.splice(IndexQ,0)
+            AvaibleQ.splice(IndexQ,1)
         // Accapting Quetions Is True
             AcceptQ = true ;
             const Question = document.getElementById("answer-question");
