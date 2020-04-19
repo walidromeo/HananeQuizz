@@ -1,0 +1,52 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body 
+{
+    background:rgb(70, 139, 116);
+    text-transform: capitalize;
+}
+/* Home Section */ 
+.h1 
+{
+    color: #fff;
+    text-align: center;
+    margin: 200px 0;
+    font-size: 50px;
+}
+/* Button */ 
+.button 
+{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 90px;
+
+}
+.btn11 
+{
+    background-color: #eee;
+    width: 160px;
+    border: 1px solid #275061;
+    transition: ease .4s all;
+}
+.btn11 a 
+{
+    color: #275061;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 20px;
+  
+}
+.btn11:hover a 
+{
+    text-decoration: none;
+}
+.btn11:hover 
+{
+    box-shadow:rgb(0, 0, 0) 1px 1px 2px 2px;
+    background: rgba(238, 238, 238,0.8);
+    color: #02080a;
+}
+
